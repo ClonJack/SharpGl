@@ -1,0 +1,15 @@
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\FirstOpenGL.exe.config
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\FirstOpenGL.exe
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\FirstOpenGL.pdb
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\SharpGL.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\SharpGL.SceneGraph.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\SharpGL.WinForms.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.csprojAssemblyReference.cache
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.Form1.resources
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.Properties.Resources.resources
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.csproj.GenerateResource.cache
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.csproj.CopyComplete
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.exe
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.pdb
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\System.Numerics.Vectors.dll
