@@ -13,3 +13,10 @@ C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.csproj.Cop
 C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.exe
 C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\obj\Debug\FirstOpenGL.pdb
 C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\Syncfusion.Chart.Base.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\Syncfusion.Chart.Windows.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\Syncfusion.Grouping.Base.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\Syncfusion.Shared.Base.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\1\source\repos\FirstOpenGL\FirstOpenGL\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll

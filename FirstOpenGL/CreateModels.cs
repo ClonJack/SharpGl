@@ -50,7 +50,9 @@ namespace FirstOpenGL
             GL.TexCoord(1.0f, 1.0f); GL.Vertex(-1.0f, 1.0f, 1.0f);    // Top Right Of The Texture and Quad
             GL.TexCoord(0.0f, 1.0f); GL.Vertex(-1.0f, 1.0f, -1.0f);   // Top Left Of The Texture and Quad
 
+
             GL.End();
+
 
 
 

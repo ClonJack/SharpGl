@@ -35,6 +35,68 @@
           "lib/net40/SharpGL.WinForms.dll": {}
         }
       },
+      "Syncfusion.Chart.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Chart.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Chart.Base.dll": {}
+        }
+      },
+      "Syncfusion.Chart.Windows/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Chart.Base": "17.3.0.33",
+          "Syncfusion.Grouping.Base": "17.3.0.33",
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Chart.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Chart.Windows.dll": {}
+        }
+      },
+      "Syncfusion.Grouping.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Grouping.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Grouping.Base.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.3.0.33": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Shared.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Shared.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Shared.Base.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -46,6 +108,34 @@
         },
         "runtime": {
           "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Windows.Controls.DataVisualization.Toolkit/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll": {}
         }
       }
     },
@@ -83,6 +173,68 @@
           "lib/net40/SharpGL.WinForms.dll": {}
         }
       },
+      "Syncfusion.Chart.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Chart.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Chart.Base.dll": {}
+        }
+      },
+      "Syncfusion.Chart.Windows/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Chart.Base": "17.3.0.33",
+          "Syncfusion.Grouping.Base": "17.3.0.33",
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Chart.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Chart.Windows.dll": {}
+        }
+      },
+      "Syncfusion.Grouping.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Grouping.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Grouping.Base.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.3.0.33": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Shared.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Shared.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Shared.Base.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -94,6 +246,28 @@
         },
         "runtime": {
           "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      },
+      "System.Windows.Controls.DataVisualization.Toolkit/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll": {}
         }
       }
     },
@@ -131,6 +305,68 @@
           "lib/net40/SharpGL.WinForms.dll": {}
         }
       },
+      "Syncfusion.Chart.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Chart.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Chart.Base.dll": {}
+        }
+      },
+      "Syncfusion.Chart.Windows/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Chart.Base": "17.3.0.33",
+          "Syncfusion.Grouping.Base": "17.3.0.33",
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Chart.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Chart.Windows.dll": {}
+        }
+      },
+      "Syncfusion.Grouping.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Grouping.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Grouping.Base.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.3.0.33": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Shared.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Shared.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Shared.Base.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -142,6 +378,28 @@
         },
         "runtime": {
           "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      },
+      "System.Windows.Controls.DataVisualization.Toolkit/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll": {}
         }
       }
     },
@@ -179,6 +437,68 @@
           "lib/net40/SharpGL.WinForms.dll": {}
         }
       },
+      "Syncfusion.Chart.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Chart.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Chart.Base.dll": {}
+        }
+      },
+      "Syncfusion.Chart.Windows/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Chart.Base": "17.3.0.33",
+          "Syncfusion.Grouping.Base": "17.3.0.33",
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Chart.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Chart.Windows.dll": {}
+        }
+      },
+      "Syncfusion.Grouping.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33",
+          "Syncfusion.Shared.Base": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Grouping.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Grouping.Base.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.3.0.33": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Shared.Base/17.3.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.33"
+        },
+        "compile": {
+          "lib/net46/Syncfusion.Shared.Base.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Syncfusion.Shared.Base.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -190,6 +510,28 @@
         },
         "runtime": {
           "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      },
+      "System.Windows.Controls.DataVisualization.Toolkit/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll": {}
         }
       }
     }
@@ -234,6 +576,133 @@
         "lib/net40/SharpGL.WinForms.xml",
         "sharpgl.winforms.2.4.1.2.nupkg.sha512",
         "sharpgl.winforms.nuspec"
+      ]
+    },
+    "Syncfusion.Chart.Base/17.3.0.33": {
+      "sha512": "gKnbk3GLNRhBbrufLyzVzwfaBLSsMyFg5Yi/p4xIxGQ4l/vxWway4cXMDf84wUfrSkPqKCJd1dwU0u5V6OpdvQ==",
+      "type": "package",
+      "path": "syncfusion.chart.base/17.3.0.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Syncfusion.Chart.Base.dll",
+        "lib/net20/Syncfusion.Chart.Base.xml",
+        "lib/net35/Syncfusion.Chart.Base.dll",
+        "lib/net35/Syncfusion.Chart.Base.xml",
+        "lib/net40/Syncfusion.Chart.Base.dll",
+        "lib/net40/Syncfusion.Chart.Base.xml",
+        "lib/net45/Syncfusion.Chart.Base.dll",
+        "lib/net45/Syncfusion.Chart.Base.xml",
+        "lib/net451/Syncfusion.Chart.Base.dll",
+        "lib/net451/Syncfusion.Chart.Base.xml",
+        "lib/net46/Syncfusion.Chart.Base.dll",
+        "lib/net46/Syncfusion.Chart.Base.xml",
+        "lib/netcoreapp3.0/Syncfusion.Chart.Base.dll",
+        "lib/netcoreapp3.0/Syncfusion.Chart.Base.xml",
+        "syncfusion.chart.base.17.3.0.33.nupkg.sha512",
+        "syncfusion.chart.base.nuspec"
+      ]
+    },
+    "Syncfusion.Chart.Windows/17.3.0.33": {
+      "sha512": "NVOTMNg49cBwVKfJafBxP1NVGE1seYKmg5ThDw07x74S/JHv9V4skInLMKFzk0t+2GVIOu3t/Z+h4zsVDdG+2A==",
+      "type": "package",
+      "path": "syncfusion.chart.windows/17.3.0.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Syncfusion.Chart.Windows.dll",
+        "lib/net20/Syncfusion.Chart.Windows.xml",
+        "lib/net35/Syncfusion.Chart.Windows.dll",
+        "lib/net35/Syncfusion.Chart.Windows.xml",
+        "lib/net40/Syncfusion.Chart.Windows.dll",
+        "lib/net40/Syncfusion.Chart.Windows.xml",
+        "lib/net45/Syncfusion.Chart.Windows.dll",
+        "lib/net45/Syncfusion.Chart.Windows.xml",
+        "lib/net451/Syncfusion.Chart.Windows.dll",
+        "lib/net451/Syncfusion.Chart.Windows.xml",
+        "lib/net46/Syncfusion.Chart.Windows.dll",
+        "lib/net46/Syncfusion.Chart.Windows.xml",
+        "lib/netcoreapp3.0/Syncfusion.Chart.Windows.dll",
+        "lib/netcoreapp3.0/Syncfusion.Chart.Windows.xml",
+        "syncfusion.chart.windows.17.3.0.33.nupkg.sha512",
+        "syncfusion.chart.windows.nuspec"
+      ]
+    },
+    "Syncfusion.Grouping.Base/17.3.0.33": {
+      "sha512": "2pO8kLws/1Zqq9XU4Kcl4+MG4AHNGBTqe8v920VzwL8PWar47bjWWiVRZSwTVAqoy6FGTQFdLB+zGfIkdbPaug==",
+      "type": "package",
+      "path": "syncfusion.grouping.base/17.3.0.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Syncfusion.Grouping.Base.dll",
+        "lib/net20/Syncfusion.Grouping.Base.xml",
+        "lib/net35/Syncfusion.Grouping.Base.dll",
+        "lib/net35/Syncfusion.Grouping.Base.xml",
+        "lib/net40/Syncfusion.Grouping.Base.dll",
+        "lib/net40/Syncfusion.Grouping.Base.xml",
+        "lib/net45/Syncfusion.Grouping.Base.dll",
+        "lib/net45/Syncfusion.Grouping.Base.xml",
+        "lib/net451/Syncfusion.Grouping.Base.dll",
+        "lib/net451/Syncfusion.Grouping.Base.xml",
+        "lib/net46/Syncfusion.Grouping.Base.dll",
+        "lib/net46/Syncfusion.Grouping.Base.xml",
+        "lib/netcoreapp3.0/Syncfusion.Grouping.Base.dll",
+        "lib/netcoreapp3.0/Syncfusion.Grouping.Base.xml",
+        "syncfusion.grouping.base.17.3.0.33.nupkg.sha512",
+        "syncfusion.grouping.base.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/17.3.0.33": {
+      "sha512": "Z8j5B+eNPlSoRpKh6QdzRuQQ/MgyyvTzFez1/f9NlfT2VJnG0q5Z3/7Izqng8Co7W7Zo2vO4SIcHWvO3VmBCng==",
+      "type": "package",
+      "path": "syncfusion.licensing/17.3.0.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.17.3.0.33.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.Shared.Base/17.3.0.33": {
+      "sha512": "DS/c9gVDsR1eFL4cI44SGdr042V4XZoWQN0wjLQSlHCL0xEDW9h/LlKtvifstVwcxURAL2ozxjiELM/CmbJwgg==",
+      "type": "package",
+      "path": "syncfusion.shared.base/17.3.0.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Syncfusion.Shared.Base.dll",
+        "lib/net20/Syncfusion.Shared.Base.xml",
+        "lib/net35/Syncfusion.Shared.Base.dll",
+        "lib/net35/Syncfusion.Shared.Base.xml",
+        "lib/net40/Syncfusion.Shared.Base.dll",
+        "lib/net40/Syncfusion.Shared.Base.xml",
+        "lib/net45/Syncfusion.Shared.Base.dll",
+        "lib/net45/Syncfusion.Shared.Base.xml",
+        "lib/net451/Syncfusion.Shared.Base.dll",
+        "lib/net451/Syncfusion.Shared.Base.xml",
+        "lib/net46/Syncfusion.Shared.Base.dll",
+        "lib/net46/Syncfusion.Shared.Base.xml",
+        "lib/netcoreapp3.0/Syncfusion.Shared.Base.dll",
+        "lib/netcoreapp3.0/Syncfusion.Shared.Base.xml",
+        "syncfusion.shared.base.17.3.0.33.nupkg.sha512",
+        "syncfusion.shared.base.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -282,6 +751,73 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "sha512": "ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "type": "package",
+      "path": "system.security.principal.windows/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.4.7.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Windows.Controls.DataVisualization.Toolkit/4.0.0": {
+      "sha512": "UqBiEXh2YmYdJE5BpJC9c1I+AzcmFlzZ1h7fn5iU2lhOLn3snSxqf46/2XHpoJetJBN4HAavqG77wzaBi5jxfQ==",
+      "type": "package",
+      "path": "system.windows.controls.datavisualization.toolkit/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.XML",
+        "lib/net40-Client/System.Windows.Controls.DataVisualization.Toolkit.dll",
+        "system.windows.controls.datavisualization.toolkit.4.0.0.nupkg.sha512",
+        "system.windows.controls.datavisualization.toolkit.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -289,7 +825,10 @@
       "SharpGL >= 2.4.1.2",
       "SharpGL.SceneGraph >= 2.4.1.2",
       "SharpGL.WinForms >= 2.4.1.2",
-      "System.Numerics.Vectors >= 4.5.0"
+      "Syncfusion.Chart.Windows >= 17.3.0.33",
+      "System.Numerics.Vectors >= 4.5.0",
+      "System.Security.Principal.Windows >= 4.7.0",
+      "System.Windows.Controls.DataVisualization.Toolkit >= 4.0.0"
     ]
   },
   "packageFolders": {
@@ -337,9 +876,21 @@
             "target": "Package",
             "version": "[2.4.1.2, )"
           },
+          "Syncfusion.Chart.Windows": {
+            "target": "Package",
+            "version": "[17.3.0.33, )"
+          },
           "System.Numerics.Vectors": {
             "target": "Package",
             "version": "[4.5.0, )"
+          },
+          "System.Security.Principal.Windows": {
+            "target": "Package",
+            "version": "[4.7.0, )"
+          },
+          "System.Windows.Controls.DataVisualization.Toolkit": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         }
       }

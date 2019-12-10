@@ -5,8 +5,9 @@ using SharpGL;
 using SharpGL.SceneGraph.Assets;
 using SharpGL.SceneGraph.Transformations;
 using SharpGL.Enumerations;
-using SharpGL;
 using System.Numerics;
+
+
 namespace FirstOpenGL
 {
     public partial class Form1 : Form
@@ -16,15 +17,23 @@ namespace FirstOpenGL
         private CreateModels models = new CreateModels();
 
 
-        private double angleRotationCube_last = 0;
+
         private double angleRotationCube = 0;
 
-        private bool isRotate = false;
 
-        private Point Pm_ONE;
-        private Point Pm_TWO;
         private PointF centrModel;
 
+        private Camera g_Camera;
+
+        private const int MOUSE_IDLE_TIME = 500; // ms 
+        private const int MOUSE_MOVE_THRESHOLD = 2; // px 
+
+
+        private static DateTime StartTime;
+        private static PointF LastMousePos = Point.Empty;
+
+        
+      private  double CurrentPosSum;
 
         private Vector3[] vector = new Vector3[]
         {
@@ -35,14 +44,11 @@ namespace FirstOpenGL
     };
 
 
-
-
-
-
         public Form1()
         {
 
 
+            g_Camera = new Camera();
             InitializeComponent();
 
             OpenGL GL = this.openGLControl1.OpenGL;
@@ -50,9 +56,14 @@ namespace FirstOpenGL
             GL.Enable(OpenGL.GL_TEXTURE_2D);
 
 
-            Pm_ONE = Cursor.Position;
+
+
+
+
 
             centrModel = new PointF(this.ClientSize.Width / 2, this.ClientSize.Height / 2);
+
+
 
 
             texture.Create(GL, "C: /Users/1/Downloads/shat.jpg");
@@ -64,86 +75,76 @@ namespace FirstOpenGL
 
 
 
+
+
         private void openGLControl1_OpenGLDraw(object sender, SharpGL.RenderEventArgs args)
         {
 
 
+
             OpenGL GL = this.openGLControl1.OpenGL;
 
+            args.Graphics.TranslateTransform(centrModel.X, centrModel.Y);
 
-     
+            args.Graphics.ScaleTransform(1, -1);
+
 
 
             GL.Clear(OpenGL.GL_COLOR_BUFFER_BIT | OpenGL.GL_DEPTH_BUFFER_BIT);
 
+
             GL.LoadIdentity();
+
+            GL.MatrixMode(MatrixMode.Modelview);
+
 
             GL.Translate(0, 0, -6);
 
 
 
-            GL.MatrixMode(MatrixMode.Modelview);
-
-
-            double atan_two = Math.Atan2((centrModel.Y - Cursor.Position.Y), (centrModel.X - Cursor.Position.X));
-
-            angleRotationCube = (atan_two * 180) / Math.PI;
-
-
-            GL.Rotate(angleRotationCube, Cursor.Position.X, Cursor.Position.Y, 0);
+            //                   |Позиция |  |Направлен| |Верт.вектор|
+            g_Camera.PostionCamera(0, 0.5f, 6, 0, 0.5f, 0, 0, 1f, 0);
 
 
 
-            // texture.Bind(GL);
+            GL.LookAt(g_Camera.m_vPositionCam.X, g_Camera.m_vPositionCam.Y, g_Camera.m_vPositionCam.Z,
+          g_Camera.m_vViewCam.X, g_Camera.m_vViewCam.Y, g_Camera.m_vViewCam.Z,
+          g_Camera.m_vUpVectorCam.X, g_Camera.m_vUpVectorCam.Y, g_Camera.m_vUpVectorCam.Z);
+
+
+
+            double RadDeg = 360 / (Math.PI * 2);
+
+
+            double atan_two = Math.Atan2((centrModel.Y - Cursor.Position.Y),
+                         (centrModel.X - Cursor.Position.X));//получаем угол поворота 
+
+            angleRotationCube = atan_two * RadDeg;// переводим из радиан в градус
+
+
+
+
+
+
+
+
+
+            var Rad = (Math.PI * 2) / 360;
+
+
+
+
+            GL.Rotate(angleRotationCube, (Vector2.Normalize(new Vector2(Cursor.Position.X)).X * 2 * Rad),0,0);//сам поворот
+
+            GL.Rotate(angleRotationCube, 0, (Vector2.Normalize(new Vector2(Cursor.Position.Y)).Y * 2 * Rad), 0);
 
             
-
-            GL.Begin(BeginMode.Polygon);
-
-            GL.Color(1f, 0, 1f, 1f);
-            GL.Vertex(vector[0].X, vector[0].Y, vector[0].Z);
-            GL.Vertex(vector[1].X, vector[1].Y, vector[1].Z);
-            GL.Vertex(vector[2].X, vector[2].Y, vector[2].Z);
-           
-            GL.End();
+            texture.Bind(GL);
 
 
+            models.DefoultCube(GL);
 
 
-
-            GL.Begin(BeginMode.Polygon);
-
-            GL.Color(1f,1f, 0f, 1f);
-            GL.Vertex(vector[0].X, vector[0].Y, vector[0].Z);
-            GL.Vertex(vector[3].X, vector[3].Y, vector[3].Z);
-            GL.Vertex(vector[1].X, vector[1].Y, vector[1].Z);
-
-            GL.End();
-
-
-
-
-            GL.Begin(BeginMode.Polygon);
-            GL.Color(1, 1, 1, 1f);
-            GL.Vertex(vector[0].X, vector[0].Y, vector[0].Z);
-            GL.Vertex(vector[2].X, vector[2].Y, vector[2].Z);
-            GL.Vertex(vector[3].X, vector[3].Y, vector[3].Z);
-
-            GL.End();
-
-
-            GL.Begin(BeginMode.Polygon);
-            GL.Color(0, 1f, 0, 1f);
-            GL.Vertex(vector[1].X, vector[1].Y, vector[1].Z);
-            GL.Vertex(vector[3].X, vector[3].Y, vector[3].Z);
-            GL.Vertex(vector[2].X, vector[2].Y, vector[2].Z);
-
-        
-            GL.End();
-        
-
-
-            //     models.DefoultCube(GL);
 
 
 
@@ -151,7 +152,9 @@ namespace FirstOpenGL
 
 
 
+
         }
+
 
     }
 
